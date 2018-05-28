@@ -1,5 +1,5 @@
 <?php
-    $path=$_SERVER['DOCUMENT_ROOT']; 
+    $path=$_SERVER['DOCUMENT_ROOT']."/ids/Room-Booking-Portal"; 
     $pageTitle = "Book A Room";
     include_once $path."/common/base.php";
     include_once $path.'/common/navbar_w_login.php';
@@ -39,7 +39,7 @@
         }</style>
 <div id="main">  
 <div id="txtHint">
-<form action="<?php $a="/booking_submit.php"; echo htmlspecialchars($a);?>" method="post">
+<form action="<?php $a="booking_submit.php"; echo htmlspecialchars($a);?>" method="post">
 <p>Dates:
     <label><b>To:</b>
 

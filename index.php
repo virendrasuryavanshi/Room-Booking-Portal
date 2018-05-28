@@ -1,5 +1,5 @@
 <?php
-$path=$_SERVER['DOCUMENT_ROOT']; 
+$path=$_SERVER['DOCUMENT_ROOT']."/ids/Room-Booking-Portal"; 
 $pageTitle = "IIIT Room Booking Portal";
 session_start();
  if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']) &&($_SESSION['Admin'] == 'yes')):

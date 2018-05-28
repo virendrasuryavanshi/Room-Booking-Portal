@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php     $path=$_SERVER['DOCUMENT_ROOT']; ?>
+<?php     $path=$_SERVER['DOCUMENT_ROOT']."/ids/Room-Booking-Portal"; ?>
 <html>
 	<head>
 		<title><?php echo $pageTitle?></title>

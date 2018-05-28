@@ -1,5 +1,5 @@
 <?php
-    $path=$_SERVER['DOCUMENT_ROOT']; 
+    $path=$_SERVER['DOCUMENT_ROOT']."/ids/Room-Booking-Portal"; 
     $pageTitle = "Book A Room";
     include_once $path."/common/base.php";
     include_once $path.'/common/navbar_w_login.php';
@@ -53,7 +53,7 @@
 <script src="js/functions.js"></script>
 <?php if(isset($_POST['room'])){?>
 <?php echo $users->date($_POST['room']);} ?>
-<form action="<?php $a="/booking_submit.php"; echo htmlspecialchars($a);?>" method="post">        
+<form action="<?php $a="booking_submit.php"; echo htmlspecialchars($a);?>" method="post">        
 <input type="hidden" name="room" value="<?php echo $_POST['room'];?>">
 <p>
 <table>

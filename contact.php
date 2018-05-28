@@ -1,5 +1,5 @@
 <?php
-    $path=$_SERVER['DOCUMENT_ROOT']; 
+    $path=$_SERVER['DOCUMENT_ROOT']."/ids/Room-Booking-Portal"; 
     $pageTitle = "Contact Us";session_start();
     include $path.'/inc/csrf.class.php';
     $csrf = new csrf();
@@ -15,7 +15,7 @@
         <div id="form-main">
     <div id="form-div">
                 <h1 style="text-align:center;font-family:Helvetica, Arial, sans-serif;color:white;">Contact Us</h1> 
-        <form class="form" id="form1" action="<?php $a="/contact_submit.php"; echo htmlspecialchars($a);?>" method="post">
+        <form class="form" id="form1" action="<?php $a="contact_submit.php"; echo htmlspecialchars($a);?>" method="post">
         <input type="hidden" name="<?= $token_id; ?>" value="<?= $token_value; ?>" />
         <p class="name">
             <input name="<?= $form_names['user']; ?>" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" required/>

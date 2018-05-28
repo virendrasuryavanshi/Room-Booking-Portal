@@ -1,5 +1,5 @@
 <?php
-$path=$_SERVER['DOCUMENT_ROOT']; 
+$path=$_SERVER['DOCUMENT_ROOT']."/ids/Room-Booking-Portal"; 
 $pageTitle = "Book A Room";
 include_once $path."/common/base.php";
 include_once $path.'/common/header.php';

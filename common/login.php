@@ -1,5 +1,5 @@
 <div id="id01" class="modal1">  
-  <form class="modal-content animate" action="<?php $a="/action_login.php"; echo htmlspecialchars($a);?>" method="post">
+  <form class="modal-content animate" action="<?php $a="action_login.php"; echo htmlspecialchars($a);?>" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="./images/avatar.png" alt="Avatar" class="avatar">

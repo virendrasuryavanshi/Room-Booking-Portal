@@ -1,5 +1,5 @@
 <?php
-    $path=$_SERVER['DOCUMENT_ROOT']; 
+    $path=$_SERVER['DOCUMENT_ROOT']."/ids/Room-Booking-Portal"; 
     $pageTitle = "Book A Room";
     include_once $path."/common/base.php";
     include_once $path.'/common/navbar_w_login.php';
@@ -47,19 +47,22 @@
 <div id="rooms">
     <form action="<?php $a="#"; echo htmlspecialchars($a);?>" method="post">        
 
-    <button type="submit" id="button-blue2" name="room" value="1">SH1</button>
-    <button type="submit" value="2" id="button-blue2" name="room">SH2</button>
-    <button type="submit" value="3" id="button-blue2" name="room">CR1</button>
-    <button type="submit" value="4" id="button-blue2" name="room">CR2</button>
-    <button type="submit" value="5" id="button-blue2" name="room">H105</button>
-    <button type="submit" value="6" id="button-blue2" name="room">H205</button>
-    <button type="submit" value="7" id="button-blue2" name="room">SARANGA</button><br />
+    <button type="submit" id="button-blue2" name="room" value="1">B1</button>
+    <button type="submit" value="2" id="button-blue2" name="room">B2</button>
+    <button type="submit" value="3" id="button-blue2" name="room">B3</button>
+    <button type="submit" value="4" id="button-blue2" name="room">B4</button>
+    <button type="submit" value="5" id="button-blue2" name="room">B5</button>
+    <button type="submit" value="6" id="button-blue2" name="room">B6</button>
+    <button type="submit" value="7" id="button-blue2" name="room">B7</button><br />
+    <button type="submit" value="8" id="button-blue2" name="room">G2</button>
+    <button type="submit" value="9" id="button-blue2" name="room">G3</button>
+    <button type="submit" value="10" id="button-blue2" name="room">G4</button><br />
     </div>
 </form>
 <script src="js/functions.js"></script>
 <?php if(isset($_POST['room'])){?>
 <?php echo $users->date($_POST['room']);} ?>
-<form action="<?php $a="/booking_submit.php"; echo htmlspecialchars($a);?>" method="post">        
+<form action="<?php $a="booking_submit.php"; echo htmlspecialchars($a);?>" method="post">        
 <input type="hidden" name="room" value="<?php echo $_POST['room'];?>">
 <p>
 <table>

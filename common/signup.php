@@ -32,7 +32,7 @@ if ($pass1 != $pass) {
   $flag = 1;
 }
 if($flag == 0){
-   $path=$_SERVER['DOCUMENT_ROOT']; 
+   $path=$_SERVER['DOCUMENT_ROOT']."/ids/Room-Booking-Portal"; 
     include_once $path."/common/base1.php";
     include_once $path."/inc/class.users.inc.php";
         $users = new RoomBookingUsers($db);

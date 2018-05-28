@@ -1,5 +1,5 @@
 <?php
-$path=$_SERVER['DOCUMENT_ROOT']; 
+$path=$_SERVER['DOCUMENT_ROOT']."/ids/Room-Booking-Portal"; 
 if(isset($_SESSION['LoggedIn']) && $_SESSION['LoggedIn']==1):
     $pageTitle = "Account settings";
     session_start();

@@ -19,7 +19,7 @@ class RoomBookingUsers
 	public function createAccount()
     {
         // echo "dfghdfg";
-		$path=$_SERVER['DOCUMENT_ROOT']; 
+		$path=$_SERVER['DOCUMENT_ROOT']."/ids/Room-Booking-Portal"; 
 
         $u = $this->test_input($_POST['uname']);
 		$e = $this->test_input($_POST['email']);
@@ -183,7 +183,7 @@ class contact{
 	}
     public function contactSubmit()
     {
-		$path=$_SERVER['DOCUMENT_ROOT']; 
+		$path=$_SERVER['DOCUMENT_ROOT']."/ids/Room-Booking-Portal"; 
         $u = $this->test_input($_POST[$_SESSION['user']]);
 		$e = $this->test_input($_POST[$_SESSION['email']]);
 		$t = $this->test_input($_POST[$_SESSION['text']]);
@@ -236,7 +236,7 @@ class bug{
 	}
     public function bugSubmit()
     {
-		$path=$_SERVER['DOCUMENT_ROOT']; 
+		$path=$_SERVER['DOCUMENT_ROOT']."/ids/Room-Booking-Portal"; 
         $u = $this->test_input($_POST[$_SESSION['user']]);
 		$e = $this->test_input($_POST[$_SESSION['email']]);
 		$t = $this->test_input($_POST[$_SESSION['text']]);
